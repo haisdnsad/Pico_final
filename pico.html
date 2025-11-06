@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html lang="pt-br" data-theme="dark">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/pico.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <title>PicoCss</title>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem
+        }
+
+        .hero {
+            padding: 3rem 2rem;
+            text-align: center
+        }
+
+        header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10rem !important;
+            padding-top: 0.5rem !important;
+            padding-bottom: 0.5rem !important
+        }
+        .card-img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem 0
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#exemplos">Exemplos</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="hero" id="top">
+            <h1>Site de exemplo usando <strong>Pico.css</strong></h1>
+            <p class="lead">Layout leve e moderno com componentes prontos — cards, formulários, tabela e galeria.</p>
+        </section>
+        <section id="exemplos">
+            <h2>Componentes de exemplo</h2>
+            <p>Pequena demonstração de cards, botões, formulário e tabela.</p>
+            <div class="grid">
+                <div>
+                    <article>
+                        <h3>Card com imagem</h3>
+                        <p>Um card simples com título, imagem e botão.</p>
+                        <img class="card-img"
+                            src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=800&q=60"
+                            alt="Exemplo de card">
+                        <p><a class="contrast" href="#">Ver mais</a></p>
+                    </article>
+                </div>
+                <div>
+                    <article>
+                        <h3>Botões e listas</h3>
+                        <p>Exemplos de botões e lista ordenada.</p>
+                        <th>Nome</th>
+                        <th>Função</th>
+                        <th>Status</th>
+                        <th>Progresso</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ana</td>
+                                <td>Designer</td>
+                                <td><span class="badge">Ativo</span></td>
+                                <td>80%</td>
+                            </tr>
+                            <tr>
+                                <td>Bruno</td>
+                                <td>Dev</td>
+                                <td><span class="badge">Pausado</span></td>
+                                <td>45%</td>
+                            </tr>
+                            <tr>
+                                <td>Carlos</td>
+                                <td>PM</td>
+                                <td><span class="badge">Ativo</span></td>
+                                <td>60%</td>
+                            </tr>
+                        </tbody>
+                        </table>
+        </section>
+        <section id="galeria">
+            <h2>Galeria</h2>
+            <p>Imagens com layout responsivo (Unsplash).</p>
+            <div class="gallery">
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=800&q=60"
+                        alt="Foto 1">
+                    <figcaption>Montanhas</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=60"
+                        alt="Foto 2">
+                    <figcaption>Praia</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=60"
+                        alt="Foto 3">
+                    <figcaption>Cidade</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=60"
+                        alt="Foto 4">
+                    <figcaption>Floresta</figcaption>
+                </figure>
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <p>Feito com <a href="https://picocss.com/">Pico.css</a> — Exemplo simples com imagens públicas da Unsplash.
+            </p>
+            <nav>
+                <ul>
+                    <li><a href="#">Termos</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
